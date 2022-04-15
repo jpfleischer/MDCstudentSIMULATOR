@@ -75,6 +75,9 @@ public class MainWindow extends javax.swing.JFrame {
         setAutoRequestFocus(false);
         setBackground(new java.awt.Color(51, 102, 0));
         setForeground(java.awt.Color.white);
+        setMaximumSize(new java.awt.Dimension(600, 400));
+        setMinimumSize(new java.awt.Dimension(600, 400));
+        setPreferredSize(new java.awt.Dimension(600, 400));
         addWindowListener(new java.awt.event.WindowAdapter() {
             public void windowOpened(java.awt.event.WindowEvent evt) {
                 formWindowOpened(evt);
@@ -82,17 +85,19 @@ public class MainWindow extends javax.swing.JFrame {
         });
 
         jPanel1.setBackground(new java.awt.Color(232, 203, 154));
-        jPanel1.setPreferredSize(new java.awt.Dimension(800, 600));
+        jPanel1.setMaximumSize(new java.awt.Dimension(600, 400));
+        jPanel1.setMinimumSize(new java.awt.Dimension(600, 400));
+        jPanel1.setPreferredSize(new java.awt.Dimension(600, 400));
         jPanel1.setRequestFocusEnabled(false);
         jPanel1.setLayout(null);
 
-        jLabel1.setFont(new java.awt.Font("Bachelor Pad College JL", 0, 60)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Bachelor Pad College JL", 0, 36)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("MDC studentSIMULATOR");
         jLabel1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jLabel1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jPanel1.add(jLabel1);
-        jLabel1.setBounds(30, 20, 710, 120);
+        jLabel1.setBounds(30, 20, 450, 80);
 
         playButton.setBackground(new java.awt.Color(204, 255, 204));
         playButton.setFont(new java.awt.Font("TF2 Build", 0, 48)); // NOI18N
@@ -123,7 +128,7 @@ public class MainWindow extends javax.swing.JFrame {
 
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/finn-feed.png"))); // NOI18N
         jLayeredPane1.add(jLabel5);
-        jLabel5.setBounds(110, 130, 450, 330);
+        jLabel5.setBounds(90, 20, 450, 330);
 
         jPanel1.add(jLayeredPane1);
         jLayeredPane1.setBounds(220, 120, 640, 460);
