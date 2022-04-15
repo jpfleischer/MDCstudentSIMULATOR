@@ -178,8 +178,6 @@ public class CharacterSelect extends javax.swing.JFrame {
         String blue = "src/main/java/resources/bluedude.png";
         String yellow = "src/main/java/resources/yellowdude.png";
         try {
-        String cwd = Path.of("").toAbsolutePath().toString();
-        System.out.println(cwd);
         if (setter == 0){
             currentchar.setIcon(new ImageIcon(ImageIO.read(new File(pink))));
             setter++;
