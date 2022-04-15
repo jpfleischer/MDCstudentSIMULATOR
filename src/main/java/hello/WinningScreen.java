@@ -33,7 +33,7 @@ public class WinningScreen extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setMinimumSize(new java.awt.Dimension(1366, 768));
+        setMinimumSize(new java.awt.Dimension(800, 600));
 
         jPanel1.setBackground(new java.awt.Color(218, 204, 235));
         jPanel1.setLayout(null);

@@ -82,17 +82,17 @@ public class MainWindow extends javax.swing.JFrame {
         });
 
         jPanel1.setBackground(new java.awt.Color(232, 203, 154));
-        jPanel1.setPreferredSize(new java.awt.Dimension(1366, 768));
+        jPanel1.setPreferredSize(new java.awt.Dimension(800, 600));
         jPanel1.setRequestFocusEnabled(false);
         jPanel1.setLayout(null);
 
-        jLabel1.setFont(new java.awt.Font("Bachelor Pad College JL", 0, 70)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Bachelor Pad College JL", 0, 60)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("MDC studentSIMULATOR");
         jLabel1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jLabel1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jPanel1.add(jLabel1);
-        jLabel1.setBounds(85, 25, 1022, 135);
+        jLabel1.setBounds(30, 20, 710, 120);
 
         playButton.setBackground(new java.awt.Color(204, 255, 204));
         playButton.setFont(new java.awt.Font("TF2 Build", 0, 48)); // NOI18N
@@ -104,7 +104,7 @@ public class MainWindow extends javax.swing.JFrame {
             }
         });
         jPanel1.add(playButton);
-        playButton.setBounds(76, 172, 356, 156);
+        playButton.setBounds(30, 160, 230, 100);
 
         quitButton.setBackground(new java.awt.Color(255, 204, 204));
         quitButton.setFont(new java.awt.Font("TF2 Build", 0, 48)); // NOI18N
@@ -116,17 +116,17 @@ public class MainWindow extends javax.swing.JFrame {
             }
         });
         jPanel1.add(quitButton);
-        quitButton.setBounds(76, 368, 356, 156);
+        quitButton.setBounds(30, 290, 230, 100);
 
         jLayeredPane1.add(speechbubble);
         speechbubble.setBounds(40, 40, 210, 170);
 
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/finn-feed.png"))); // NOI18N
         jLayeredPane1.add(jLabel5);
-        jLabel5.setBounds(180, 120, 450, 330);
+        jLabel5.setBounds(110, 130, 450, 330);
 
         jPanel1.add(jLayeredPane1);
-        jLayeredPane1.setBounds(583, 150, 650, 460);
+        jLayeredPane1.setBounds(220, 120, 640, 460);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
