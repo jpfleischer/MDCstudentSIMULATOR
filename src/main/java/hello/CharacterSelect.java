@@ -79,10 +79,10 @@ public class CharacterSelect extends javax.swing.JFrame {
         jLabel1.setText("Choose YourCharacter");
         jLabel1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
 
-        currentchar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/bluedude.png"))); // NOI18N
+        currentchar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bluedude.png"))); // NOI18N
 
         rightbutton.setBackground(new java.awt.Color(242, 242, 242));
-        rightbutton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/arrow-01.png"))); // NOI18N
+        rightbutton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/arrow-01.png"))); // NOI18N
         rightbutton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         rightbutton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -91,7 +91,7 @@ public class CharacterSelect extends javax.swing.JFrame {
         });
 
         leftbutton.setBackground(new java.awt.Color(242, 242, 242));
-        leftbutton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/arrow-flip.png"))); // NOI18N
+        leftbutton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/arrow-flip.png"))); // NOI18N
         leftbutton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         leftbutton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

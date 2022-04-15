@@ -18,6 +18,9 @@ import javax.imageio.ImageIO;
 import javax.swing.ImageIcon;
 import javax.swing.SwingUtilities;
 import javazoom.jl.player.Player;
+import java.awt.GraphicsEnvironment;
+import java.awt.Font;
+import java.awt.FontFormatException;
 
 
 /**
@@ -30,6 +33,13 @@ public class MainWindow extends javax.swing.JFrame {
      * Creates new form NewJFrame
      */
     public MainWindow() {
+        try {
+            GraphicsEnvironment ge =
+                    GraphicsEnvironment.getLocalGraphicsEnvironment();
+            ge.registerFont(Font.createFont(Font.TRUETYPE_FONT, new File("src/main/java/resources/BachelorPadCollege.ttf")));
+        } catch (IOException|FontFormatException e) {
+            e.printStackTrace();
+        }
         initComponents();
        setLocationRelativeTo(null);
        playermusic y = playermusic.getInstance();
@@ -77,7 +87,6 @@ public class MainWindow extends javax.swing.JFrame {
         setForeground(java.awt.Color.white);
         setMaximumSize(new java.awt.Dimension(600, 400));
         setMinimumSize(new java.awt.Dimension(600, 400));
-        setPreferredSize(new java.awt.Dimension(600, 400));
         addWindowListener(new java.awt.event.WindowAdapter() {
             public void windowOpened(java.awt.event.WindowEvent evt) {
                 formWindowOpened(evt);
