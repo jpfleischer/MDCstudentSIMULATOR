@@ -37,6 +37,8 @@ public class MainWindow extends javax.swing.JFrame {
             GraphicsEnvironment ge =
                     GraphicsEnvironment.getLocalGraphicsEnvironment();
             ge.registerFont(Font.createFont(Font.TRUETYPE_FONT, new File("src/main/java/resources/BachelorPadCollege.ttf")));
+            ge.registerFont(Font.createFont(Font.TRUETYPE_FONT, new File("src/main/java/resources/PressStart2P.ttf")));
+            ge.registerFont(Font.createFont(Font.TRUETYPE_FONT, new File("src/main/java/resources/tf2build.ttf")));
         } catch (IOException|FontFormatException e) {
             e.printStackTrace();
         }
@@ -100,7 +102,7 @@ public class MainWindow extends javax.swing.JFrame {
         jPanel1.setRequestFocusEnabled(false);
         jPanel1.setLayout(null);
 
-        jLabel1.setFont(new java.awt.Font("Bachelor Pad College JL", 0, 36)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Bachelor Pad College JL", 0, 48)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("MDC studentSIMULATOR");
         jLabel1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
