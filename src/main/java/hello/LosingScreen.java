@@ -39,7 +39,6 @@ public class LosingScreen extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMaximumSize(new java.awt.Dimension(600, 400));
         setMinimumSize(new java.awt.Dimension(600, 400));
-        setPreferredSize(new java.awt.Dimension(600, 400));
         setSize(new java.awt.Dimension(600, 400));
 
         jPanel1.setBackground(new java.awt.Color(0, 0, 0));
@@ -55,7 +54,7 @@ public class LosingScreen extends javax.swing.JFrame {
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText(":(");
         jPanel1.add(jLabel2);
-        jLabel2.setBounds(540, 140, 19, 48);
+        jLabel2.setBounds(519, 140, 60, 48);
 
         playButton.setBackground(new java.awt.Color(204, 255, 204));
         playButton.setFont(new java.awt.Font("TF2 Build", 0, 48)); // NOI18N
