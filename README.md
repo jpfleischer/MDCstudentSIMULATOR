@@ -1,6 +1,6 @@
 # MDCstudentSIMULATOR
 
-## Press Play button and green Run button to play. Don't forget to enable audio by clicking the checkbox in the bottom right.
+## Play this on replit! https://replit.com/@JacquesFleische/MDCstudentSIMULATOR
 
 
 Greetings, digital citizen. You may have come across
