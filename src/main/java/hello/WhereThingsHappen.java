@@ -155,7 +155,7 @@ private static class RoundedBorder implements Border {
         daynumbertext.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         daynumbertext.setText("1");
         jPanel1.add(daynumbertext);
-        daynumbertext.setBounds(500, 60, 60, 50);
+        daynumbertext.setBounds(490, 50, 80, 70);
 
         gradestext.setBackground(new java.awt.Color(255, 255, 255));
         gradestext.setFont(new java.awt.Font("Press Start 2P", 0, 12)); // NOI18N
