@@ -119,7 +119,6 @@ private static class RoundedBorder implements Border {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMaximumSize(new java.awt.Dimension(600, 400));
         setMinimumSize(new java.awt.Dimension(600, 400));
-        setPreferredSize(new java.awt.Dimension(600, 400));
         setResizable(false);
         addWindowFocusListener(new java.awt.event.WindowFocusListener() {
             public void windowGainedFocus(java.awt.event.WindowEvent evt) {
@@ -178,7 +177,7 @@ private static class RoundedBorder implements Border {
         jPanel1.add(calendar);
         calendar.setBounds(470, -10, 160, 160);
         jPanel1.add(charactermiddle);
-        charactermiddle.setBounds(190, 10, 230, 380);
+        charactermiddle.setBounds(140, 80, 290, 360);
 
         vidyaButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vidyagame.png"))); // NOI18N
         vidyaButton.setToolTipText("Realize that the fun of video games has been long gone since your childhood.");
@@ -273,7 +272,7 @@ private static class RoundedBorder implements Border {
         // TODO add your handling code here:
         final ImageIcon icon = new ImageIcon("src/main/java/resources/finnlogo.png");
         Image image2 = icon.getImage().getScaledInstance(130,100,0);
-        JOptionPane.showMessageDialog(null, "You have 12 days to maintain your grades and your happiness.\nYou can go to class, party, study, game... It's all up to you. That's called \"being an adult.\"\nRemember, the end of the semester is in 12 days. So shape up your grades and remember to have fun.\nGood luck out there...", "That's the breaks!", JOptionPane.PLAIN_MESSAGE, new ImageIcon(image2));
+        JOptionPane.showMessageDialog(null, "You have 12 days to maintain your grades and your happiness.\nYou can go to class, party, study, game... It's all up to you.\nThat's called \"being an adult.\"\nRemember, the end of the semester is in 12 days.\nSo shape up your grades and remember to have fun.\nGood luck out there...", "That's the breaks!", JOptionPane.PLAIN_MESSAGE, new ImageIcon(image2));
     }//GEN-LAST:event_formWindowOpened
 
     private void vidyaButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_vidyaButtonActionPerformed

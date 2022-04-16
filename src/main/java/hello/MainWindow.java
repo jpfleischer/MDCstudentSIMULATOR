@@ -21,6 +21,8 @@ import javazoom.jl.player.Player;
 import java.awt.GraphicsEnvironment;
 import java.awt.Font;
 import java.awt.FontFormatException;
+import java.awt.*;
+import javax.swing.*;
 
 
 /**
@@ -42,10 +44,15 @@ public class MainWindow extends javax.swing.JFrame {
         } catch (IOException|FontFormatException e) {
             e.printStackTrace();
         }
+        final ImageIcon icon = new ImageIcon("src/main/java/resources/finnlogo.png");
+        Image image2 = icon.getImage().getScaledInstance(130,100,0);
+        String nextDialog = "Welcome to MDCstudentSIM!\nIf you are playing on Replit, don't forget\nto tick the audio checkbox in the bottom-right.";
+        JOptionPane.showMessageDialog(null, nextDialog, "", JOptionPane.PLAIN_MESSAGE, new ImageIcon(image2));
         initComponents();
        setLocationRelativeTo(null);
        playermusic y = playermusic.getInstance();
        y.Play("src/main/java/resources/mainmusic.mp3");
+
     }
     
     public void segue(){
@@ -76,18 +83,17 @@ public class MainWindow extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
-        playButton = new javax.swing.JButton();
-        quitButton = new javax.swing.JButton();
         jLayeredPane1 = new javax.swing.JLayeredPane();
         speechbubble = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
+        playButton = new javax.swing.JButton();
+        quitButton = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("MDCstudentSIMULATOR");
         setAutoRequestFocus(false);
         setBackground(new java.awt.Color(51, 102, 0));
         setForeground(java.awt.Color.white);
-        setMaximumSize(new java.awt.Dimension(600, 400));
         setMinimumSize(new java.awt.Dimension(600, 400));
         addWindowListener(new java.awt.event.WindowAdapter() {
             public void windowOpened(java.awt.event.WindowEvent evt) {
@@ -110,39 +116,41 @@ public class MainWindow extends javax.swing.JFrame {
         jPanel1.add(jLabel1);
         jLabel1.setBounds(10, 20, 580, 80);
 
+        jLayeredPane1.add(speechbubble);
+        speechbubble.setBounds(210, 20, 210, 220);
+
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/finn-feed.png"))); // NOI18N
+        jLayeredPane1.add(jLabel5);
+        jLabel5.setBounds(290, 90, 450, 330);
+
         playButton.setBackground(new java.awt.Color(204, 255, 204));
         playButton.setFont(new java.awt.Font("TF2 Build", 0, 36)); // NOI18N
         playButton.setText("PLAY!");
+        playButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         playButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         playButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 playButtonActionPerformed(evt);
             }
         });
-        jPanel1.add(playButton);
-        playButton.setBounds(30, 160, 230, 100);
+        jLayeredPane1.add(playButton);
+        playButton.setBounds(20, 110, 170, 90);
 
         quitButton.setBackground(new java.awt.Color(255, 204, 204));
         quitButton.setFont(new java.awt.Font("TF2 Build", 0, 36)); // NOI18N
         quitButton.setText("QUIT");
+        quitButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         quitButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         quitButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 quitButtonActionPerformed(evt);
             }
         });
-        jPanel1.add(quitButton);
-        quitButton.setBounds(30, 290, 230, 100);
-
-        jLayeredPane1.add(speechbubble);
-        speechbubble.setBounds(60, -20, 210, 170);
-
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/finn-feed.png"))); // NOI18N
-        jLayeredPane1.add(jLabel5);
-        jLabel5.setBounds(110, 0, 450, 330);
+        jLayeredPane1.add(quitButton);
+        quitButton.setBounds(20, 220, 170, 90);
 
         jPanel1.add(jLayeredPane1);
-        jLayeredPane1.setBounds(220, 120, 640, 460);
+        jLayeredPane1.setBounds(10, 30, 850, 550);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);

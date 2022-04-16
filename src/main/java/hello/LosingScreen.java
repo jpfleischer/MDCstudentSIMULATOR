@@ -18,7 +18,7 @@ public class LosingScreen extends javax.swing.JFrame {
         setLocationRelativeTo(null);
         playermusic z = playermusic.getInstance();
             z.Stop();
-            z.Play("/losingsong.mp3");
+            z.Play("src/main/java/resources/losingsong.mp3");
     }
 
     /**
@@ -37,7 +37,10 @@ public class LosingScreen extends javax.swing.JFrame {
         jLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setMinimumSize(new java.awt.Dimension(800, 600));
+        setMaximumSize(new java.awt.Dimension(600, 400));
+        setMinimumSize(new java.awt.Dimension(600, 400));
+        setPreferredSize(new java.awt.Dimension(600, 400));
+        setSize(new java.awt.Dimension(600, 400));
 
         jPanel1.setBackground(new java.awt.Color(0, 0, 0));
         jPanel1.setLayout(null);
@@ -46,13 +49,13 @@ public class LosingScreen extends javax.swing.JFrame {
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("You Lost");
         jPanel1.add(jLabel1);
-        jLabel1.setBounds(70, 80, 585, 172);
+        jLabel1.setBounds(30, 20, 250, 120);
 
         jLabel2.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText(":(");
         jPanel1.add(jLabel2);
-        jLabel2.setBounds(910, 260, 19, 48);
+        jLabel2.setBounds(540, 140, 19, 48);
 
         playButton.setBackground(new java.awt.Color(204, 255, 204));
         playButton.setFont(new java.awt.Font("TF2 Build", 0, 48)); // NOI18N
@@ -64,21 +67,21 @@ public class LosingScreen extends javax.swing.JFrame {
             }
         });
         jPanel1.add(playButton);
-        playButton.setBounds(940, 530, 160, 70);
+        playButton.setBounds(50, 300, 160, 70);
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/dunno.gif"))); // NOI18N
         jPanel1.add(jLabel3);
-        jLabel3.setBounds(397, 130, 400, 490);
+        jLabel3.setBounds(210, 10, 400, 490);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 600, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 400, Short.MAX_VALUE)
         );
 
         pack();

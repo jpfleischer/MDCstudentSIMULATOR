@@ -73,13 +73,18 @@ public class CharacterSelect extends javax.swing.JFrame {
         setMinimumSize(new java.awt.Dimension(600, 400));
         setPreferredSize(new java.awt.Dimension(600, 400));
         setSize(new java.awt.Dimension(600, 400));
+        getContentPane().setLayout(null);
 
         jLabel1.setFont(new java.awt.Font("Bachelor Pad College JL", 0, 40)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("Choose YourCharacter");
         jLabel1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        getContentPane().add(jLabel1);
+        jLabel1.setBounds(30, 10, 543, 49);
 
         currentchar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bluedude.png"))); // NOI18N
+        getContentPane().add(currentchar);
+        currentchar.setBounds(160, 60, 257, 325);
 
         rightbutton.setBackground(new java.awt.Color(242, 242, 242));
         rightbutton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/arrow-01.png"))); // NOI18N
@@ -89,6 +94,8 @@ public class CharacterSelect extends javax.swing.JFrame {
                 rightbuttonActionPerformed(evt);
             }
         });
+        getContentPane().add(rightbutton);
+        rightbutton.setBounds(460, 150, 110, 78);
 
         leftbutton.setBackground(new java.awt.Color(242, 242, 242));
         leftbutton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/arrow-flip.png"))); // NOI18N
@@ -98,6 +105,8 @@ public class CharacterSelect extends javax.swing.JFrame {
                 leftbuttonActionPerformed(evt);
             }
         });
+        getContentPane().add(leftbutton);
+        leftbutton.setBounds(30, 150, 121, 77);
 
         okbutton.setBackground(new java.awt.Color(153, 255, 153));
         okbutton.setFont(new java.awt.Font("TF2 Build", 0, 30)); // NOI18N
@@ -109,6 +118,8 @@ public class CharacterSelect extends javax.swing.JFrame {
                 okbuttonActionPerformed(evt);
             }
         });
+        getContentPane().add(okbutton);
+        okbutton.setBounds(470, 310, 111, 37);
 
         gobackbutton.setBackground(new java.awt.Color(255, 204, 204));
         gobackbutton.setFont(new java.awt.Font("TF2 Build", 0, 30)); // NOI18N
@@ -120,59 +131,8 @@ public class CharacterSelect extends javax.swing.JFrame {
                 gobackbuttonActionPerformed(evt);
             }
         });
-
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(leftbutton, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(41, 41, 41))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(gobackbutton)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)))
-                .addComponent(currentchar)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(rightbutton, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(okbutton, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(21, 21, 21))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(69, 69, 69)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 543, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(48, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(currentchar, javax.swing.GroupLayout.PREFERRED_SIZE, 325, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap())
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(101, 101, 101)
-                                .addComponent(leftbutton, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(rightbutton, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(102, 102, 102)))
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addComponent(okbutton)
-                                .addGap(16, 16, 16))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addComponent(gobackbutton)
-                                .addGap(15, 15, 15))))))
-        );
+        getContentPane().add(gobackbutton);
+        gobackbutton.setBounds(20, 310, 161, 37);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
