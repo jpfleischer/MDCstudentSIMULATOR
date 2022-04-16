@@ -117,7 +117,9 @@ private static class RoundedBorder implements Border {
         jLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setMinimumSize(new java.awt.Dimension(800, 600));
+        setMaximumSize(new java.awt.Dimension(600, 400));
+        setMinimumSize(new java.awt.Dimension(600, 400));
+        setPreferredSize(new java.awt.Dimension(600, 400));
         setResizable(false);
         addWindowFocusListener(new java.awt.event.WindowFocusListener() {
             public void windowGainedFocus(java.awt.event.WindowEvent evt) {
@@ -141,42 +143,42 @@ private static class RoundedBorder implements Border {
         happinessmeter.setName(""); // NOI18N
         happinessmeter.setString("");
         jPanel1.add(happinessmeter);
-        happinessmeter.setBounds(20, 650, 290, 50);
+        happinessmeter.setBounds(30, 300, 150, 50);
         ColorUIResource colorResource = new ColorUIResource(Color.blue.darker().darker());
         UIManager.put("nimbusOrange", colorResource);
 
         gradeicon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gradeB.png"))); // NOI18N
         gradeicon.setToolTipText("Here's this anxiety-inducing letter.");
         jPanel1.add(gradeicon);
-        gradeicon.setBounds(1100, 430, 250, 280);
+        gradeicon.setBounds(460, 200, 120, 160);
 
         daynumbertext.setFont(new java.awt.Font("Segoe UI Black", 0, 48)); // NOI18N
         daynumbertext.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         daynumbertext.setText("1");
         jPanel1.add(daynumbertext);
-        daynumbertext.setBounds(1260, 70, 60, 50);
+        daynumbertext.setBounds(500, 60, 60, 50);
 
         gradestext.setBackground(new java.awt.Color(255, 255, 255));
         gradestext.setFont(new java.awt.Font("Press Start 2P", 0, 12)); // NOI18N
         gradestext.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        gradestext.setText("CURRENT AVG. GRADE");
+        gradestext.setText("GRADE AVG");
         gradestext.setOpaque(true);
         jPanel1.add(gradestext);
-        gradestext.setBounds(1050, 700, 290, 40);
+        gradestext.setBounds(450, 350, 130, 40);
 
         happinesstext.setBackground(new java.awt.Color(255, 255, 255));
         happinesstext.setFont(new java.awt.Font("Press Start 2P", 0, 12)); // NOI18N
         happinesstext.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        happinesstext.setText("HAPPINESS METER");
+        happinesstext.setText("HAPPINESS");
         happinesstext.setOpaque(true);
         jPanel1.add(happinesstext);
-        happinesstext.setBounds(20, 700, 290, 40);
+        happinesstext.setBounds(30, 350, 150, 40);
 
         calendar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/calendar.png"))); // NOI18N
         jPanel1.add(calendar);
-        calendar.setBounds(1230, 0, 160, 160);
+        calendar.setBounds(470, -10, 160, 160);
         jPanel1.add(charactermiddle);
-        charactermiddle.setBounds(480, 210, 420, 560);
+        charactermiddle.setBounds(190, 10, 230, 380);
 
         vidyaButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vidyagame.png"))); // NOI18N
         vidyaButton.setToolTipText("Realize that the fun of video games has been long gone since your childhood.");
@@ -187,7 +189,7 @@ private static class RoundedBorder implements Border {
             }
         });
         jPanel1.add(vidyaButton);
-        vidyaButton.setBounds(510, 0, 150, 140);
+        vidyaButton.setBounds(300, 0, 90, 80);
         vidyaButton.setOpaque(false);
         vidyaButton.setContentAreaFilled(false);
         vidyaButton.setBorderPainted(false);
@@ -203,7 +205,7 @@ private static class RoundedBorder implements Border {
             }
         });
         jPanel1.add(studyButton);
-        studyButton.setBounds(340, 0, 150, 140);
+        studyButton.setBounds(200, 0, 90, 80);
         studyButton.setOpaque(false);
         studyButton.setContentAreaFilled(false);
         studyButton.setBorderPainted(false);
@@ -219,7 +221,7 @@ private static class RoundedBorder implements Border {
             }
         });
         jPanel1.add(partayButton);
-        partayButton.setBounds(170, 0, 150, 140);
+        partayButton.setBounds(100, 0, 90, 80);
         partayButton.setOpaque(false);
         partayButton.setContentAreaFilled(false);
         partayButton.setBorderPainted(false);
@@ -235,7 +237,7 @@ private static class RoundedBorder implements Border {
             }
         });
         jPanel1.add(lectureButton);
-        lectureButton.setBounds(0, 0, 150, 140);
+        lectureButton.setBounds(0, 0, 90, 80);
         lectureButton.setOpaque(false);
         lectureButton.setContentAreaFilled(false);
         lectureButton.setBorderPainted(false);
@@ -243,19 +245,25 @@ private static class RoundedBorder implements Border {
         lectureButton.setBorder(new RoundedBorder(10));
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/dorm.jpg"))); // NOI18N
-        jLabel3.setText("jLabel3");
+        jLabel3.setMaximumSize(new java.awt.Dimension(600, 400));
+        jLabel3.setMinimumSize(new java.awt.Dimension(600, 400));
+        jLabel3.setPreferredSize(new java.awt.Dimension(600, 400));
         jPanel1.add(jLabel3);
-        jLabel3.setBounds(0, 0, 1370, 770);
+        jLabel3.setBounds(0, 0, 600, 400);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 1366, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 600, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 768, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 400, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
         pack();

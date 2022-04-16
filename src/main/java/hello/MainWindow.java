@@ -102,16 +102,16 @@ public class MainWindow extends javax.swing.JFrame {
         jPanel1.setRequestFocusEnabled(false);
         jPanel1.setLayout(null);
 
-        jLabel1.setFont(new java.awt.Font("Bachelor Pad College JL", 0, 48)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Bachelor Pad College JL", 0, 40)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("MDC studentSIMULATOR");
         jLabel1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jLabel1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jPanel1.add(jLabel1);
-        jLabel1.setBounds(30, 20, 450, 80);
+        jLabel1.setBounds(10, 20, 580, 80);
 
         playButton.setBackground(new java.awt.Color(204, 255, 204));
-        playButton.setFont(new java.awt.Font("TF2 Build", 0, 48)); // NOI18N
+        playButton.setFont(new java.awt.Font("TF2 Build", 0, 36)); // NOI18N
         playButton.setText("PLAY!");
         playButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         playButton.addActionListener(new java.awt.event.ActionListener() {
@@ -123,7 +123,7 @@ public class MainWindow extends javax.swing.JFrame {
         playButton.setBounds(30, 160, 230, 100);
 
         quitButton.setBackground(new java.awt.Color(255, 204, 204));
-        quitButton.setFont(new java.awt.Font("TF2 Build", 0, 48)); // NOI18N
+        quitButton.setFont(new java.awt.Font("TF2 Build", 0, 36)); // NOI18N
         quitButton.setText("QUIT");
         quitButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         quitButton.addActionListener(new java.awt.event.ActionListener() {
@@ -135,11 +135,11 @@ public class MainWindow extends javax.swing.JFrame {
         quitButton.setBounds(30, 290, 230, 100);
 
         jLayeredPane1.add(speechbubble);
-        speechbubble.setBounds(40, 40, 210, 170);
+        speechbubble.setBounds(60, -20, 210, 170);
 
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/finn-feed.png"))); // NOI18N
         jLayeredPane1.add(jLabel5);
-        jLabel5.setBounds(90, 20, 450, 330);
+        jLabel5.setBounds(110, 0, 450, 330);
 
         jPanel1.add(jLayeredPane1);
         jLayeredPane1.setBounds(220, 120, 640, 460);
