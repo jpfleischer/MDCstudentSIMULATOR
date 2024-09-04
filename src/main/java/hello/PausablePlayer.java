@@ -3,14 +3,17 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package hello;
+
 import java.io.FileInputStream;
 import java.io.InputStream;
 import javazoom.jl.decoder.JavaLayerException;
 import javazoom.jl.player.Player;
 import javax.media.j3d.AudioDevice;
+
 /**
  *
- * @author credit to durandal on stackoverflow, jacques fleischer did NOT make this
+ * @author credit to durandal on stackoverflow, jacques fleischer did NOT make
+ *         this
  */
 public class PausablePlayer {
     private final static int NOTSTARTED = 0;
@@ -137,32 +140,30 @@ public class PausablePlayer {
 
     // demo how to use
     public static void main(String theinput) {
-        
         try {
-            FileInputStream input = new FileInputStream("src/main/java/resources/finntalk1.mp3");
+            // Use PausablePlayer.class.getResourceAsStream() to load resources in a static
+            // method
+            InputStream input = PausablePlayer.class.getResourceAsStream("/finntalk1.mp3");
+            InputStream input2 = PausablePlayer.class.getResourceAsStream("/licorice.mp3");
+
+            if (input == null || input2 == null) {
+                System.err.println("MP3 files not found in the classpath");
+                return;
+            }
+
             PausablePlayer player = new PausablePlayer(input);
-            FileInputStream input2 = new FileInputStream("src/main/java/resources/licorice.mp3");
             PausablePlayer player2 = new PausablePlayer(input2);
-            if (theinput.equals("finntalk1")){
-                
+
+            if (theinput.equals("finntalk1")) {
                 player.play();
-                
+                return;
+            } else {
+                player2.play();
             }
-            else {
-                player.close();
-            }
-            // start playing
-            
 
-            // after 5 secs, pause
-            /* Thread.sleep(5000);
-            player.pause();   */  
-
-            /* after 5 secs, resume
-            Thread.sleep(5000);
-            player.resume(); */
         } catch (final Exception e) {
             throw new RuntimeException(e);
         }
     }
+
 }
