@@ -22,20 +22,19 @@ jobs:
       - name: Build with Maven
         run: mvn package
 
-      - name: Install Chocolatey
-        run: |
-          Set-ExecutionPolicy Bypass -Scope Process -Force;
-          [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072;
-          iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
-
       - name: Install Launch4j using Chocolatey
         run: |
           choco install launch4j -y
 
-      - name: Create EXE using Launch4j
+      - name: Find Launch4j Path and Run
         run: |
-          launch4j launch4j.xml
+          launch4jPath=$(choco list --local-only launch4j | grep "launch4j" | awk '{print $3}')
+          echo "Launch4j installed version: $launch4jPath"
+          launch4jExecutable="C:\ProgramData\chocolatey\lib\launch4j.$launch4jPath\tools\launch4j.exe"
+          echo "Using Launch4j executable at: $launch4jExecutable"
+          $launch4jExecutable launch4j.xml
         shell: bash
+
 
       - name: Upload EXE artifact
         uses: actions/upload-artifact@v2
