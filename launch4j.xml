@@ -1,0 +1,26 @@
+<launch4jConfig>
+  <!-- The jar file that you want to convert to an EXE -->
+  <jar>target/gs-maven-0.1.0.jar</jar>
+  
+  <!-- The output EXE file that will be generated -->
+  <outfile>target/MDCstudentSIMULATOR.exe</outfile>
+  
+  <!-- Main class that contains the 'public static void main(String[] args)' method -->
+  <manifest>
+    <mainClass>com.example.MainClass</mainClass> <!-- Replace with your actual main class -->
+  </manifest>
+
+  <!-- Settings related to the generated EXE file -->
+  <headerType>gui</headerType> <!-- 'gui' if it's a graphical application, 'console' for command-line -->
+  <errTitle>Application Error</errTitle>
+  <cmdLine></cmdLine>
+  <chdir>.</chdir>
+  <priority>normal</priority>
+  <downloadUrl></downloadUrl>
+  <supportUrl></supportUrl>
+  <stayAlive>false</stayAlive>
+  <restartOnCrash>false</restartOnCrash>
+
+  <!-- Optionally, you can specify an icon for the EXE -->
+  <icon></icon> <!-- Path to a .ico file if you want a custom icon for your EXE -->
+</launch4jConfig>
