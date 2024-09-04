@@ -26,15 +26,10 @@ jobs:
         run: |
           choco install launch4j -y
 
-      - name: Find Launch4j Path and Run
+      - name: Run Launch4j
         run: |
-          launch4jPath=$(choco list --local-only launch4j | grep "launch4j" | awk '{print $3}')
-          echo "Launch4j installed version: $launch4jPath"
-          launch4jExecutable="C:\ProgramData\chocolatey\lib\launch4j.$launch4jPath\tools\launch4j.exe"
-          echo "Using Launch4j executable at: $launch4jExecutable"
-          $launch4jExecutable launch4j.xml
+          "C:\Program Files (x86)\Launch4j\launch4j.exe" launch4j.xml
         shell: bash
-
 
       - name: Upload EXE artifact
         uses: actions/upload-artifact@v2
