@@ -1,5 +1,9 @@
 # MDCstudentSIMULATOR
 
+To compile and play the game, you need maven and make.
+You can install these using chocolatey with `choco install maven make -y`
+Then, clone the repo, change directory to the repo, and say `make`
+
 ## Play this on replit! https://replit.com/@JacquesFleische/MDCstudentSIMULATOR
 
 
