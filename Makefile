@@ -1,0 +1,2 @@
+hi:
+	java -jar target/gs-maven-0.1.0-shaded.jar
