@@ -1,11 +1,18 @@
 # MDCstudentSIMULATOR
 
+If you want to play right away, download from Releases
+on the right side of this page!
+
 To compile and play the game, you need maven and make.
 You can install these using chocolatey with `choco install maven make -y`
 Then, clone the repo, change directory to the repo, and say `make`
 
-## Play this on replit! https://replit.com/@JacquesFleische/MDCstudentSIMULATOR
+it was once able to be played on replit,
+but replit's bad changes including getting rid of free
+resources has caused this to now fail.
+https://replit.com/@JacquesFleische/MDCstudentSIMULATOR
 
+## Plot
 
 Greetings, digital citizen. You may have come across
 this cringeworthy masterpiece for any number of reasons.
@@ -20,7 +27,7 @@ or will you party the nights away? That, my friend, is up to you.
 
 Never forget to have fun.
 
-### Developer Notes
+## Developer Notes
 
 The replit is known not to work on Google Chrome on Mac. This is likely
 a site-wide issue. It is probably not an issue with this replit in
